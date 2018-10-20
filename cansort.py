@@ -45,10 +45,10 @@ from IPython.display import display
 
 classifier.fit_generator(
     training_set,
-    steps_per_epoch= 200,
-    epochs=10,
+    steps_per_epoch= 2000,
+    epochs=5,
     validation_data = test_set,
-    validation_steps = 20
+    validation_steps = 200
 )
 
-classifier.save("cansort.h5")
+classifier.save("cansort1.h5")
