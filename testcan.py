@@ -18,11 +18,11 @@ test_image3 = image.load_img('tests/20181020_031516.jpg', target_size= (64,64))
 test_image3 = image.img_to_array(test_image3)
 test_image3 = np.expand_dims(test_image3, axis = 0)
 
-test_image4 = image.load_img('tests/20181020_031517.jpg', target_size= (64,64))
+test_image4 = image.load_img('tests/20181020_032409.jpg', target_size= (64,64))
 test_image4 = image.img_to_array(test_image4)
 test_image4 = np.expand_dims(test_image4, axis = 0)
 
-model = load_model("cansort.h5")
+model = load_model("cansort1.h5")
 
 result = model.predict(test_image)
 result1 = model.predict(test_image1)
