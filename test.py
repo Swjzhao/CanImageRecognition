@@ -1,7 +1,9 @@
 
+
 import serial
 import time
 import os
+import testcan
 from flask import Flask
 
 app = Flask(__name__)
@@ -11,4 +13,4 @@ def output():
 for  i in range(100):
     if(i%100 == 0):
         os.system("start webcam.html")
-        os.system("python testcan.py")
+        testcan.prediction()
