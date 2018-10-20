@@ -45,8 +45,7 @@ while (0 < 1):
             i = -50
         print(msg,lastm)
     i = i + 1
-    if(bool == 0):
-        ard.write(b'd')
+
 
 
 
